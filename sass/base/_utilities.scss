@@ -1,0 +1,6 @@
+.u-hide-phone {
+    @include respond(phone) {
+        display: none !important;
+        visibility: none !important;
+    }
+}

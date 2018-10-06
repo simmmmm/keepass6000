@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, lighten($color-blue, 25%), lighten($color-green, 40%));
+}

@@ -1,0 +1,96 @@
+.account {
+    font-size: 1.3rem;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 8rem;
+
+    //////////////////////////////////////////////// items ///////////////////////////////////////////////////////
+
+    &__list-item {
+        text-decoration: none;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $color-grey-light;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-grey-light;
+        }
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-grey;
+        font-weight: 600;
+        padding-bottom: 2rem;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    &__span {
+        font-weight: 600;
+    }
+
+    &__category {
+        margin-left: 1rem;
+        margin-right: auto;
+        font-size: 1.1rem;
+        color: $color-grey-dark-2;
+
+        &:hover {
+            border-bottom: 1px solid $color-grey-dark-2;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-grey-dark;
+        display: flex;
+        align-items: center;  
+        padding: 2rem;
+        flex: 1;
+
+    }
+
+    &__list-image {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 3px;
+        margin-right: 1.5rem;
+    }
+
+    //////////////////////////////////////// quickaccess ///////////////////////////////////////////////
+
+    &__quickaccess {
+        display: flex;
+    }
+    
+    &__link-icon {
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__quickicon {
+        fill: $color-grey-dark-2;
+        border: 1px solid $color-grey-dark-2;
+        border-radius: 3px;
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: 1rem;
+        box-sizing: content-box;
+
+        &:hover,
+        &:active {
+            fill: $color-grey-dark;
+            border: 1px solid $color-grey-dark;
+        }
+    }
+}
