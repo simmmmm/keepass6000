@@ -76,9 +76,34 @@
         display: flex;
         flex-direction: column;
     }
+
+
+    ///////////////////////////////// hover /////////////////////////////////////////
+    
+    &__main {
+        position: absolute;
+        width: 15rem;
+        height: 25rem;
+        background-color: $color-white;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+
+    &__main-list {
+        list-style: none;
+    }
+
+    &__main-item {
+        color: $color-green;
+    }
+
+    &__main-link:link,
+    &__main-link:active {
+        text-decoration: none;
+    }
 }
 
-//////////////////////// menu-bar position fixed //////////////////////////@at-root
+//////////////////////// menu-bar position fixed //////////////////////////////////////
 
 .menu-bar {
     position: fixed;
@@ -86,4 +111,12 @@
     left: 0;
     margin: auto;
     width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }

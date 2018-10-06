@@ -12,15 +12,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid $color-grey-light;
 
-        &:not(:last-of-type) {
-            border-bottom: 1px solid $color-grey-light;
+
+        &:nth-child(even) {
+            background-color: $color-grey-light;
         }
 
         &:hover,
         &:active {
-            background-color: $color-grey-light;
+            background-color: $color-green-light;
         }
+
+        
     }
 
     &__order {

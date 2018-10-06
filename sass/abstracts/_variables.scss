@@ -7,6 +7,9 @@ $color-blue: #6cd4ff;
 $color-green: #85c559;
 $color-white: #fff;
 
+$color-blue-light: lighten($color-blue, 30%); 
+$color-green-light: lighten($color-green, 30%);
+
 $color-grey: rgb(218, 218, 218);
 $color-grey-light: lighten($color-grey, 10%);
 $color-grey-dark-2: darken($color-grey, 10%);
@@ -15,16 +18,5 @@ $color-grey-dark: mix(darken($color-primary, 50%), darken($color-grey, 100%));
 $box-shadow: 0 10px 40px rgba($color-grey-dark, 0.2);
 
 #theme-toggle[type="radio"]:checked {
-    $color-primary:#75bad8;
-    $color-primary-light: #dbf4ff;
-    $color-primary-dark: #a2d1e5;
-
-    $color-blue: #6cd4ff;
-    $color-green: #85c559;
     $color-white: #333;
-
-    $color-grey: rgb(218, 218, 218);
-    $color-grey-light: lighten($color-grey, 10%);
-    $color-grey-dark-2: darken($color-grey, 10%);
-    $color-grey-dark: mix(darken($color-primary, 50%), darken($color-grey, 100%));
 }
