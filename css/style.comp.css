@@ -63,7 +63,9 @@ body {
   .menu__title {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    display: flex;
+    align-items: center; }
     @media only screen and (max-width: 56.25em) {
       .menu__title {
         margin: 0; } }
@@ -91,7 +93,7 @@ body {
     fill: #09181e;
     display: inline-block; }
     .menu__filter-icon--sort {
-      margin-left: .5rem; }
+      margin-right: 1rem; }
       @media only screen and (max-width: 56.25em) {
         .menu__filter-icon--sort {
           margin: 0; } }
@@ -106,19 +108,57 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column; }
+  .menu__icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 1rem;
+    fill: #09181e; }
+  .menu__subtitle {
+    color: #85c559;
+    margin-left: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f4f4f4;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    padding: .5rem; }
   .menu__main {
-    position: absolute;
-    width: 15rem;
-    height: 25rem;
+    position: relative;
     background-color: #fff;
     border-radius: 3px;
-    padding: 1rem; }
+    padding: 1.1rem; }
   .menu__main-list {
-    list-style: none; }
+    list-style: none;
+    position: absolute;
+    top: 6.5rem;
+    background-color: #fff;
+    color: #85c559;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px; }
   .menu__main-item {
-    color: #85c559; }
-  .menu__main-link:link, .menu__main-link:active {
-    text-decoration: none; }
+    display: flex; }
+    .menu__main-item:not(:last-child) {
+      border-bottom: 1px solid #f4f4f4; }
+    .menu__main-item--hover {
+      position: relative;
+      display: inline-block; }
+  .menu__main-link:link, .menu__main-link:visited {
+    text-decoration: none;
+    color: #09181e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 1rem; }
+  .menu__main-link:active, .menu__main-link:hover {
+    background-color: #f4f4f4; }
+  .menu__main-hover {
+    display: none;
+    position: absolute;
+    z-index: 9999999999; }
+
+.menu__main-link:hover .menu__main-hover {
+  display: block; }
 
 .menu-bar {
   position: fixed;
