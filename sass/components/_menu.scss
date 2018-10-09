@@ -84,22 +84,27 @@
     
 
     &__icon {
+        display: flex;
         width: 1.3rem;
         height: 1.3rem;
         margin-right: 1rem;
         fill: $color-grey-dark;
+
+        &--right {
+            margin-left: auto;
+            align-self: flex-end;
+        }
     }
 
     &__subtitle {
-        color: $color-green;
+        color: $color-grey-dark-2;
         margin-left: 3rem;
         font-size: 1rem;
         font-weight: 600;
         background-color: $color-grey-light;
-        border: 1px solid $color-grey;
+        border: 1px solid $color-grey-dark-2;
         border-radius: 3px;
-        padding: .5rem;
-        
+        padding: .4rem .7rem;
     }
 
     &__main {
@@ -125,11 +130,6 @@
         &:not(:last-child) {
             border-bottom: 1px solid $color-grey-light;
         }
-
-        &--hover {
-            position: relative;
-            display: inline-block;
-        }
     }
 
     &__main-link:link,
@@ -146,21 +146,49 @@
     }
 
     &__main-link:active,
-    &__main-link:hover {
-        background-color: $color-grey-light;
+    &__main-link:hover,
+    &__main-link:focus-within {
+        background-color: $color-green-light;
     }
 
 //////////////////////////////// dropdown ////////////////////////////////////////////////
 
     &__main-hover {
+        visibility: hidden;
+        opacity: 0;
         display: none;
+
         position: absolute;
-        z-index: 9999999999;
+        margin-top: 1rem;
+        left: 15rem;
+        list-style: none;
+        top: 7rem;
+
+        width: auto;
+
+        background-color: $color-white;
+        color: $color-green;
+
+        border: 1px solid $color-grey-dark-2;
+        border-radius: 3px;  
+    }
+
+    &__main-hover-item {
+        clear: both;
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
     }
 }
 
-.menu__main-link:hover .menu__main-hover {
-    display: block;
+.menu__main-item:hover > .menu__main-hover,
+.menu__main-item:focus-within > .menu__main-hover,
+.menu__main-item .menu__main-hover:hover,
+.menu__main-item .menu__main-hover:focus {
+   visibility: visible;
+   opacity: 1;
+   display: flex;
+   flex: 1;
 }
 
 //////////////////////// menu-bar position fixed //////////////////////////////////////

@@ -17,6 +17,6 @@ $color-grey-dark: mix(darken($color-primary, 50%), darken($color-grey, 100%));
 
 $box-shadow: 0 10px 40px rgba($color-grey-dark, 0.2);
 
-#theme-toggle[type="radio"]:checked {
+input[type="checkbox"]:checked + theme-toggle {
     $color-white: #333;
 }

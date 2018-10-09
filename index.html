@@ -41,23 +41,27 @@
                                     Database
                                 </a>
                             </li>
-                            <li class="menu__main-item menu__main-item--hover">
+                            <li class="menu__main-item menu__main-hover-item" aria-haspopup="true">
                                 <a href="#" class="menu__main-link">
                                     <svg class="menu__icon">
                                         <use xlink:href="img/sprite.svg#icon-tools"></use>
                                     </svg>
                                     Tools
-                                    <svg class="menu__icon">
+                                    <svg class="menu__icon u-float-right">
                                         <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
                                     </svg>
                                 </a>
-                                <ul class="menu__main-hover">
+                                <ul class="menu__main-hover" aria-label="submenu">
                                     <li class="menu__main-item">
                                         <a href="#" class="menu__main-link">
                                             <svg class="menu__icon">
                                                 <use xlink:href="img/sprite.svg#icon-light-up"></use>
                                             </svg>
-                                            Toggle mode
+                                            <input type="checkbox" id="theme-toggle">
+                                            <label for="theme-toggle">Toggle mode</label>
+
+
+                                            <span class="menu__subtitle">Ctrl + Shift + M</span>
                                         </a>
                                     </li>
                                 </ul>
