@@ -87,13 +87,13 @@
         transition: all .3s;
 
         &::placeholder {
-            opacity: 1;
-            color: $color-grey-dark-2;
+            opacity: .8;
+            color: $color-grey-dark;
         }
 
         &:focus::placeholder,
         &:active::placeholder {
-            color: $color-grey-dark;
+            
             opacity: 1;
         }
 

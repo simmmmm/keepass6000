@@ -362,10 +362,9 @@ body {
     flex-direction: column;
     transition: all .3s; }
     .popup__input::placeholder {
-      opacity: 1;
-      color: #c1c1c1; }
+      opacity: .8;
+      color: #09181e; }
     .popup__input:focus::placeholder, .popup__input:active::placeholder {
-      color: #09181e;
       opacity: 1; }
     .popup__input--password {
       border-radius: 3px 0 0 3px;
