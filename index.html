@@ -16,7 +16,7 @@
     <div class="container">
         <main class="account">
             <div class="menu-bar">
-                <div class="menu">
+                <div id="menu" class="menu">
                     <div class="menu__info">
                         <a href="#mainmenu" class="menu__sort">
                             <svg class="menu__filter-icon">
@@ -76,7 +76,7 @@
                             </li>
                         </ul>
                         <form action="#" class="search">
-                            <input type="text" class="search__input" placeholder="Search">
+                            <input type="search" class="search__input" placeholder="Search">
                             <svg class="search__icon">
                                 <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                             </svg>
@@ -91,7 +91,7 @@
                         Vault.kbdx
                     </div>
                     <div class="menu__options">
-                        <a href="#" class="menu__sort u-hide-phone">
+                        <a href="#addnew" class="menu__sort u-hide-phone">
                             <svg class="menu__filter-icon">
                                 <use xlink:href="img/sprite.svg#icon-plus"></use>
                             </svg>
@@ -421,7 +421,56 @@
             </ul>
         </main>
     </div>
+
+    <div id="addnew" class="popup">
+        <div class="popup__content">
+            <div class="popup__header">
+                <svg class="popup__icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                <h2 class="popup__title">
+                    Add new
+                </h2>
+            </div>
+            <a href="#menu" class="popup__close">&times;</a>
+            <form action="#" class="popup__form">
+                <input type="text" class="popup__input" placeholder="Username">
+            </form>
+            <form action="#" class="popup__form">
+                <input type="password" class="popup__input" placeholder="Password">
+            </form>
+            <div class="popup__generate">
+                <form action="#" class="popup__form popup__form--password">
+                    <input type="password" class="popup__input popup__input--password" placeholder="Repeat password">
+                </form>
+                <a href="#" class="popup__link">
+                    <svg class="popup__generate-icon">
+                        <use xlink:href="img/sprite.svg#icon-cycle"></use>
+                    </svg>
+                </a>
+            </div>
+            <form action="#" class="popup__form">
+                <input type="text" class="popup__input" placeholder="Website URL">
+            </form>
+            <form action="#" class="popup__form">
+                <textarea class="popup__input" placeholder="Notes" rows="3">
+
+
+
+
+
+
+
+                </textarea>
+            </form>
+            <form action="#" class="popup__form">
+                <input type="datetime-local" class="popup__input" placeholder="Expires" rows="1">
+            </form>
+        </div>
+    </div>
+
 </body>
+
 <script lang="javascript" src="js/main.js"></script>
 
 </html>

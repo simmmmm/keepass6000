@@ -1,6 +1,5 @@
 .search {
     display: flex;
-    padding: 1rem;
     margin: 1rem 0;
     border: 1px solid $color-grey-dark-2;
     border-radius: 3px;
@@ -14,6 +13,8 @@
         color: inherit;
         font-size: 1.2rem;
         border: none;
+        padding: 1rem;
+
 
         @include respond(phone) { 
             display: none;
@@ -32,10 +33,10 @@
     &__icon {
         height: 1.3rem;
         width: 1.3rem;
-        padding: .2rem;
+        padding: 1.2rem;
+        display: flex;
         align-self: center;
         box-sizing: content-box;
-        border-radius: 1rem;
     }
 
 }
