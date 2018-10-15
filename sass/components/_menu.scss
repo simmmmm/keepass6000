@@ -7,6 +7,13 @@
     justify-content: space-between;
     background-color: white;
 
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-grey-dark, .3);
+    }
+
     &__title {
         font-size: 1.5rem;
         font-weight: 600;

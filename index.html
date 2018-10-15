@@ -426,10 +426,10 @@
         <div class="popup__content">
             <div class="popup__header">
                 <svg class="popup__icon">
-                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
                 </svg>
                 <h2 class="popup__title">
-                    Add new
+                    Add new password
                 </h2>
             </div>
             <a href="#menu" class="popup__close">&times;</a>
@@ -443,28 +443,64 @@
                 <form action="#" class="popup__form popup__form--password">
                     <input type="password" class="popup__input popup__input--password" placeholder="Repeat password">
                 </form>
-                <a href="#" class="popup__link">
+                <a href="#generate" class="popup__link">
                     <svg class="popup__generate-icon">
                         <use xlink:href="img/sprite.svg#icon-cycle"></use>
                     </svg>
                 </a>
             </div>
+            <div class="generate" id="generate">
+                <div class="generate__info">
+                    <h5 class="generate__title">
+                        Generated password:
+                    </h5>
+                    <span class="generate__span">
+                        Entropy 310,18 Bit
+                    </span>
+                </div>
+                <form action="#" class="generate__form">
+                    <input type="text" class="generate__input" value=".DCÿ%àr<;TÈ&¦n¼DY®ÞÊºxÙû,)ód&8R*ü¼¥Kqut3¯#">
+                </form>
+                <div class="generate__options">
+                    <form action="#" class="generate__range">
+                        <label for="strenght">Strenght</label>
+                        <input type="range" name="strenght" min="8" max="256" value="42" step="1">
+                    </form>
+                    <div class="generate__button-row">
+                        <button class="generate__button">A-Z</button>
+                        <button class="generate__button">a-z</button>
+                        <button class="generate__button">0-9</button>
+                        <button class="generate__button">/*_</button>
+                        <button class="generate__button">Extended ASCII</button>
+                    </div>
+                    <div class="generate__link-row">
+                        <a href="#" class="generate__link">
+                            <svg class="generate__icon">
+                                <use xlink:href="img/sprite.svg#icon-save"></use>
+                            </svg>
+                            Copy & Fill</a>
+                        <a href="#" class="generate__link">
+                            <svg class="generate__icon">
+                                <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+                            </svg>
+                            Copy</a>
+                        <a href="#" class="generate__link">
+                            <svg class="generate__icon">
+                                <use xlink:href="img/sprite.svg#icon-cross"></use>
+                            </svg>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
             <form action="#" class="popup__form">
                 <input type="text" class="popup__input" placeholder="Website URL">
             </form>
             <form action="#" class="popup__form">
-                <textarea class="popup__input" placeholder="Notes" rows="3">
-
-
-
-
-
-
-
-                </textarea>
+                <textarea class="popup__input" placeholder="Notes" rows="3"></textarea>
             </form>
-            <form action="#" class="popup__form">
-                <input type="datetime-local" class="popup__input" placeholder="Expires" rows="1">
+            <form action="#" class="popup__form popup__form--expires">
+                <input type="time" class="popup__input popup__input--expires" placeholder="Expires">
+                <input type="date" class="popup__input popup__input--expires" placeholder="Expires">
             </form>
         </div>
     </div>
